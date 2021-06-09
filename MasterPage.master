@@ -1,0 +1,113 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .style1 {
+            width: 100%;
+            background-color: #CCCCFF;
+        }
+        .style2
+        {
+            width: 80%;
+            border-right-color: #C0C0C0;
+            border-bottom-color: #C0C0C0;
+        }
+        .style3
+        {
+            width: 80%;
+            border-color: #00CC66;
+        }
+    </style>
+</head>
+<body>
+
+    <form id="form1" runat="server">
+
+    <table cellpadding="0" cellspacing="0" class="style1">
+        <tr>
+            <td>
+                <table align="center" cellpadding="0" cellspacing="0" class="style2">
+                    <tr>
+                        <td width="30%" bgcolor="#99CC00" align="center" >
+                          
+                            <asp:ImageButton ID="ImageButton2" runat="server" Height="76px" 
+                                ImageUrl="~/images/logo.png" Width="311px" />
+                            <br />
+                            <br />
+                            <br />
+                            <br />
+                        </td>
+                        <td bgcolor="#99CC00">
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        &nbsp
+                            <asp:LinkButton ID="LinkButton1" runat="server" onclick="LinkButton1_Click">HOME</asp:LinkButton>
+                            &nbsp&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
+                            <asp:LinkButton ID="LinkButton2" runat="server" onclick="LinkButton2_Click">EVENTS</asp:LinkButton>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp
+                            <asp:LinkButton ID="LinkButton3" runat="server" onclick="LinkButton3_Click">SERVICES</asp:LinkButton>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            &nbsp
+                            <asp:LinkButton ID="LinkButton4" runat="server" onclick="LinkButton4_Click">JOBS</asp:LinkButton>
+                            &nbsp&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp
+                            <asp:LinkButton ID="LinkButton5" runat="server" onclick="LinkButton5_Click">CONTACTS</asp:LinkButton>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+    <div>
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+
+    
+ <table cellpadding="0" cellspacing="0" class="style1">
+        <tr>
+            <td>
+                <table align="center" cellpadding="0" cellspacing="0" class="style3">
+                    <tr>
+                        <td width="30%" bgcolor="#99CC00">
+                            <asp:ImageButton ID="ImageButton1" runat="server" Height="60px" 
+                                ImageUrl="~/images/footer-logo.png" Width="302px" />
+                            <br />
+                            <br />
+                            <br />
+                            <br />
+                        </td>
+                        <td bgcolor="#99CC00">
+                        <p class="prev-indent-bot">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &copy; 2015 Interior Website Template by <a target="_blank" href="http://www.templatemonster.com/">TemplateMonster.com</a>
+                        
+                          
+                         </p>
+                        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Phone: +91 9899193621 Email: <a href="#">
+                            info@internetcafe.com&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   
+                            <asp:ImageButton ID="ImageButton3" runat="server" Height="24px" 
+                                ImageUrl="~/images/social-icons.jpg" Width="161px" />   
+                        
+                          
+
+                        </p>
+                        <div align=center>This template  downloaded form <a href='http://all-free-download.com/free-website-templates/'>free website templates</a></div>
+
+
+
+                            &nbsp;</td>
+
+                            
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+    </form>
+</body>
+</html>
